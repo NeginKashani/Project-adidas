@@ -1,0 +1,576 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, serif, Monospace;
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top {
+  width: 100%;
+  height: 40px;
+  background: black;
+  display: flex;
+  justify-content: center;
+}
+.top > h6 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 12px;
+}
+.top > h6 > a {
+  color: aliceblue;
+}
+.top > i {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.top-us {
+  width: 30%;
+  height: 30px;
+  margin-left: 900px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  float: right;
+}
+.top-us > a {
+  color: black;
+  margin: 20px;
+}
+.top-us > a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+.header > figure {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+.header .menu {
+  width: 65%;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.header .menu > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .menu > ul > li {
+  display: flex;
+}
+.header .menu > ul > li:hover > .mega {
+  height: 400px;
+}
+.header .menu > ul > li > a {
+  text-decoration: none;
+  margin: 10px;
+  color: rgba(63, 63, 63, 0.767);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.header .menu > ul > li > a:hover {
+  text-decoration: underline;
+  color: black;
+}
+.header .mega {
+  width: 100%;
+  height: 0;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 160px;
+  left: 0;
+  overflow: hidden;
+  transition: 0.7s;
+}
+.header .mega > li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .mega .colume {
+  width: 15%;
+}
+.header .mega .colume > li {
+  line-height: 30px;
+}
+.header .mega .colume > li > h5 {
+  text-transform: uppercase;
+}
+.header .mega .colume > li > a {
+  color: rgb(36, 38, 39);
+}
+.header .mega .colume > li > a:hover {
+  text-decoration: underline;
+}
+.header .search {
+  width: 25%;
+}
+.header .search > input {
+  margin: 20px 10px 30px 10px;
+  height: 30px;
+  background: rgb(225, 225, 235);
+}
+.header .search > a {
+  color: black;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.startschool {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 10px;
+  background-image: url(../images/image8.avif);
+  background-size: 100% 100%;
+}
+.startschool > .box {
+  width: 50%;
+  height: 500px;
+}
+.startschool > .box > h2 {
+  color: white;
+  margin: 20px auto;
+  font-size: 40px;
+  padding-top: 150px;
+  margin-left: 45px;
+}
+.startschool > .box > p {
+  width: 70%;
+  color: white;
+  margin-left: 45px;
+  font-size: 20px;
+}
+.startschool > .box > a {
+  color: black;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-transform: uppercase;
+  border: 2px solid black;
+  font-weight: bold;
+  width: 30%;
+  margin: 20px;
+  margin-left: 45px;
+  background-color: white;
+  padding: 12px;
+  box-shadow: 5px 5px rgba(212, 209, 209, 0.466);
+}
+.startschool > .box > a:hover {
+  color: gray;
+}
+.startschool > .box > a > i {
+  margin: 6px;
+}
+
+.clothes {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.clothes > div {
+  display: flex;
+  height: 400px;
+  flex-grow: 1;
+  margin-top: 80px;
+}
+.clothes > div > figure {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+.clothes > div > figure > img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clothes > div > figure > figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.clothes > div > figure > figcaption > a {
+  width: 50%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.5s;
+}
+.clothes > div > figure > figcaption > a:hover {
+  color: white;
+  background: #000;
+}
+
+.newarrivals {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+}
+.newarrivals > .newarrivals-trend {
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.newarrivals > .newarrivals-trend > a {
+  text-transform: capitalize;
+  color: rgb(175, 175, 175);
+  font-size: 30px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.newarrivals > .newarrivals-trend > a:nth-of-type(1) {
+  color: #000;
+}
+.newarrivals > .newarrivals-trend > i {
+  margin-left: 10px;
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newarrivals > .viewall {
+  width: 30%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newarrivals > .viewall > a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #000;
+}
+.newarrivals > .viewall > a:hover {
+  background: #000;
+  color: white;
+  padding: 5px;
+}
+.newarrivals > .viewall > i {
+  margin: 20px;
+  color: #000;
+  font-size: 20px;
+  height: 35px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newarrivals > .viewall > i:hover {
+  cursor: pointer;
+  background: #000;
+  color: aliceblue;
+}
+
+.shoes {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.shoes > div {
+  display: flex;
+  height: 400px;
+  flex-grow: 1;
+  margin: 2px;
+}
+.shoes > div:hover {
+  border: 3px solid black;
+  cursor: pointer;
+}
+.shoes > div > figure {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+.shoes > div > figure > i {
+  margin-left: 280px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.shoes > div > figure > i:hover {
+  color: red;
+}
+.shoes > div > figure > img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shoes > div > figure > figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.shoes > div > figure > figcaption > a {
+  width: 50%;
+  color: black;
+  display: flex;
+  justify-content: start;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: -120px;
+}
+
+.popular {
+  width: 100%;
+  min-height: 35vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.popular > div {
+  width: 400px;
+  height: 250px;
+  flex-grow: 1;
+}
+.popular > div > h4 {
+  width: 100%;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.popular > div > h5 {
+  width: 100%;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+.popular .line {
+  width: 350px;
+  height: 3px;
+  background: #000;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+.popular .line:hover {
+  height: 10px;
+  cursor: pointer;
+}
+
+.always {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.always > div {
+  width: 300px;
+  height: 430px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+}
+.always > div > figure > img {
+  width: 300px;
+  height: 428px;
+}
+.always > .shop {
+  width: 300px;
+  height: 200px;
+  display: block;
+}
+.always > .shop > h3 {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.always > .shop > p {
+  width: 100%;
+  font-size: 15px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.always > .shop > a {
+  width: 100%;
+  text-transform: uppercase;
+  padding-left: 20px;
+  color: #000;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: 0.14s;
+}
+.always > .shop > a:hover {
+  color: rgb(175, 173, 173);
+}
+
+.popular1 {
+  width: 100%;
+  height: 80px;
+  text-transform: capitalize;
+  padding-left: 26px;
+  font-size: 25px;
+}
+
+.style {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(241, 238, 238);
+  display: flex;
+}
+.style > div {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.style > div > h3 {
+  width: 60%;
+  font-size: 35px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.style > div > p {
+  width: 95%;
+  margin-left: 20px;
+  line-height: 22px;
+  color: rgb(71, 71, 71);
+}
+
+.join {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(245, 245, 43);
+  display: flex;
+}
+.join > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join > div > h4 {
+  font-size: 25px;
+}
+.join > div > a {
+  background: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px;
+  border: 1px solid black;
+  padding: 15px;
+  color: white;
+  box-shadow: 5px 5px rgb(241, 241, 241);
+}
+.join > div > a:hover {
+  color: rgb(165, 161, 161);
+}
+
+.footer-top {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-top > .footer-top1 {
+  width: 80%;
+  display: flex;
+}
+.footer-top > .footer-top1 > nav {
+  width: 100%;
+  display: flex;
+}
+.footer-top > .footer-top1 > nav > .colume {
+  padding: 30px;
+  flex-grow: 1;
+  width: 18%;
+}
+.footer-top > .footer-top1 > nav > .colume > li {
+  margin: 2px;
+}
+.footer-top > .footer-top1 > nav > .colume > li > a {
+  color: #000;
+  font-size: 14px;
+}
+.footer-top > .footer-top1 > nav > .colume > li > a:hover {
+  text-decoration: underline;
+}
+.footer-top > .footer-top1 > nav > .colume > li > h5 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.footer-top > .footer-top2 {
+  width: 20%;
+}
+.footer-top > .footer-top2 > h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer-top > .footer-top2 > div > i {
+  margin: 10px;
+  padding: 10px;
+  font-size: 35px;
+}
+.footer-top > .footer-top2 > div > i:hover {
+  color: gray;
+  cursor: progress;
+}
+
+.foot-bottom {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(83, 82, 82);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}/*# sourceMappingURL=index.css.map */
